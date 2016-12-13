@@ -1,0 +1,7 @@
+*.o
+*.cxx
+*.so
+swigLib_wrap.cpp
+swigLib.py
+__pycache__
+*.kdev4
