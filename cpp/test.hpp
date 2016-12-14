@@ -36,8 +36,8 @@ typedef std::chrono::time_point<std::chrono::high_resolution_clock> TP;
 namespace DARK_MAGIC {
 
 // Turns off the optimizer
-void escape( void *p );
-void clobber();
+inline void escape( void *p ) { asm volatile( "" : : "g"( p ) : "memory" ); }
+inline void clobber() { asm volatile( "" : : : "memory" ); }
 }
 
 class Test {

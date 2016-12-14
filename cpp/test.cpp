@@ -30,14 +30,6 @@
 #include <iostream>
 #include <locale>
 
-namespace DARK_MAGIC {
-
-// Turns off the optimizer
-void escape( void *p ) { asm volatile( "" : : "g"( p ) : "memory" ); }
-void               clobber() { asm volatile( "" : : : "memory" ); }
-}
-
-
 void Test::printHeadder( std::string str ) {
   std::cout << "          PYTHON BINDING TEST" << std::endl
             << "          ===================" << std::endl

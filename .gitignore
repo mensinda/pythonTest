@@ -2,6 +2,8 @@
 *.cxx
 *.so
 swigLib_wrap.cpp
+cythLib.cpp
+cythTest.cpp
 swigLib.py
 __pycache__
 *.kdev4

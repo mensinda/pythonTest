@@ -7,3 +7,5 @@
 
 %include "cpp/classa.hpp"
 %include "cpp/test.hpp"
+
+%ignore DARK_MAGIC;
